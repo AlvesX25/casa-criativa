@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa criativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    
+<section id="intro">
+    <header>
+
+        <img src="img/logo.png" alt="Perfil casa criativa"> 
+    </header>
+    <main>
+
+        <p>
+            Ficar em casa nesse periodo de crise não<br>
+            deve ser nada fácil,por isso preparamos algumas idéias<br>
+            <strong> brincadeiras,jogos,filmes,livros,cursos,dicas</strong> e tudo o<br>
+            que for necessário para torna esse momento mais interessante.
+        </p>
+        <p>Comece cliclando em ver idéias para ver as idéias cadastradas<br>
+        ou adicione a sua idéia</p>
+    </main>
+    
+  
+    <section id="buttons" > 
+    
+        <button onclick="onOff()">+Adicionar idéias</button>
+        <button class="fat">Ver idéias</button> 
+
+    </section>
+
+
+
+
+
+<footer> 
+    <a href="http://rocketseat.com.br">Com ❤️ rocketseat</a>
+</footer> 
+
+</section>
+
+
+<section id="last-ideas">
+<div class="idea">
+    <img src="img/programacao.png" 
+    alt="imagem de curso de progamação">
+
+    <div class="content">
+       <h3>Curso de Programação</h3>
+        <p>Estudo</p>
+        <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quae ipsa delectus illum distinctio beatae unde vitae aperiam voluptates velit mollitia consequuntur praesentium odit perferendis, illo similique eaque rerum assumenda!
+        </div>
+        <a href="#">Ir para a idéia</a>
+    </div>
+   
+</div>
+
+<div class="idea">
+    <img src="img/exercicios.png" 
+    alt="exerciccios">
+
+    <div class="content">
+
+        <h3>Exercicíos</h3>
+        <p>Saude</p>
+        <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quae ipsa delectus illum distinctio beatae unde vitae aperiam voluptates velit mollitia consequuntur praesentium odit perferendis, illo similique eaque rerum assumenda!
+        </div>
+        <a href="#">Ir para a idéia</a>
+    </div>
+   
+</div>
+
+<div class="idea">
+    <img src="img/meditacao.png" 
+    alt="imagem de meditação">
+
+    <div class="content">
+
+        <h3>Meditação</h3>
+        <p>Mentalidade</p>
+        <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quae ipsa delectus illum distinctio beatae unde vitae aperiam voluptates velit mollitia consequuntur praesentium odit perferendis, illo similique eaque rerum assumenda!
+        </div>
+        <a href="#">Ir para a idéia</a>
+    </div>
+   
+</div>
+
+
+</section>
+</div>
+
+ <!--Modal-->
+<div id="modal" class="hide">
+    <div class="content">
+        <h1>Nova ideia</h1>
+        
+        <form action="">
+            
+            <div class="input-wrapper">
+                <label for="title">Titulo da idéia</label>
+                <input type="text" name="title">
+             
+            </div>
+
+      
+            <div class="input-wrapper">
+                <label for="category">Categoria </label>
+                <input type="text" name="category">
+                
+            </div>
+
+            <div class="input-wrapper">
+                <label for="image">Link da imagem </label>
+                <input type="url" name="image">
+                
+            </div>
+
+            <div class="input-wrapper">
+                <label for="description">Digite uma descrição para essa ideia </label>
+                
+                <textarea name="description" cols="30" rows="10"></textarea>
+                
+            </div>
+
+            <div class="input-wrapper">
+                
+                <label for="link">Link da ideia </label>
+                <input type="url" name="link">
+                
+            </div>
+          
+        
+             <a href="#" onclick="onOff()">Voltar</a>
+            <button>Salvar</button>
+        
+         </form>
+        </div>
+    </div>
+
+
+
+    
+    
+<script src="scripts.js"></script>
+
+    
+    
+</body>
+</html>
